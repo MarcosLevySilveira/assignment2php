@@ -1,0 +1,88 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(225deg, rgba(235, 220, 4, 0.918) 0%, #75c02b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 3.5em;
+  color: #f4f4f4;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Make the main element grow to fill the remaining space */
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+/* Hide scrollbar for Firefox */
+main {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for WebKit/Blink browsers */
+main::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+section {
+  max-width: 100%;
+  width: 100%;
+  height: 60vh; /* Adjust the height as per your design */
+}
+
+.container .form-row,
+.container .col-container,
+.notlogged {
+  margin-bottom: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.notlogged {
+  margin-top: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(225deg, rgba(235, 220, 4, 0.918) 0%, #75c02b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Center the error message */
+main > :first-child {
+  text-align: center;
+}

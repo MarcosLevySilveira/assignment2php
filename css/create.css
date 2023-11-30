@@ -1,0 +1,84 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply styles to the body and HTML */
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(225deg, rgba(235, 220, 4, 0.918) 0%, #75c02b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main section styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0.6; /* Adjust the flex-grow value */
+  max-height: 75%; /* Adjust the max-height value */
+  width: 100vw;
+  overflow-y: auto; /* Use auto for scrollable or scroll for always visible scrollbar */
+  scrollbar-width: thin; /* Set a thin scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+main {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for WebKit/Blink browsers */
+main::-webkit-scrollbar {
+  width: 0.5rem; /* Set a small width for WebKit/Blink browsers */
+}
+
+.container {
+  width: 100%;
+  max-width: 500px; /* Adjust as needed */
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #343a40;
+  color: white;
+  padding: 15px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(225deg, rgba(235, 220, 4, 0.918) 0%, #75c02b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: auto; /* Push the footer to the bottom */
+}
